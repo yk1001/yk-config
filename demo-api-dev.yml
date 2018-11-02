@@ -15,13 +15,15 @@ management:
   endpoint:
     health:
       show-details: always
-  
+    shutdown:
+      enabled: true
+      
 eureka:
   client:
     serviceUrl:
       defaultZone: http://${YK_DISCOVERY_SERVICE_HOST}:${YK_DISCOVERY_SERVICE_PORT}/eureka
     healthcheck:
-      enabled: true #ʹ��health�˵��������������������Ƿ���ã���Ӧ��eureka server ui�Ϸ����UP����DOWN
+      enabled: true #切换健康检查方式
   instance:
     preferIpAddress: true
 
