@@ -1,0 +1,5 @@
+server:
+  port: 9003
+
+logging:
+  path: /yk/logs/yk_cloud/baseplatform/
